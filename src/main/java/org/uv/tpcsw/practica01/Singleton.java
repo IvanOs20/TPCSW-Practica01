@@ -1,5 +1,8 @@
 package org.uv.tpcsw.practica01;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Singleton {
     
     private static Singleton sin = null;
@@ -14,7 +17,8 @@ public class Singleton {
     }
     
     public void imprimir(){
-        System.out.println("Mensaje...");
+        Logger.getLogger(Singleton.class.getName()).
+                log(Level.INFO,"Mensaje ...");
     }
     
 }
