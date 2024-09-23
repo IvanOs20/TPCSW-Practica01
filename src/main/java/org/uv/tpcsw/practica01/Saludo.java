@@ -8,7 +8,7 @@ public class Saludo extends Mensaje{
     @Override
     public void msg() {
         Logger.getLogger(Saludo2.class.getName()).
-                log(Level.INFO,"Hola mundo ...");
+                log(Level.INFO,"Hola mundo .");
     }
     
 }

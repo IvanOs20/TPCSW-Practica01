@@ -19,9 +19,9 @@ public class TPCSWPractica01 {
         ConexionBD conexion = ConexionBD.getInstance();
         EmpleadoPojo pojo = new EmpleadoPojo();
         pojo.setClave("01");
-        pojo.setNombre("Roberto");
-        pojo.setDireccion("Av 1");
-        pojo.setTelefono("272");
+        pojo.setNombre("Payares");
+        pojo.setDireccion("Poniente 3");
+        pojo.setTelefono("276");
         TransaccionDB<EmpleadoPojo> transaction = new TransaccionDB<EmpleadoPojo>(pojo) {
             @Override
             public boolean execute(Connection con) {
@@ -44,9 +44,9 @@ public class TPCSWPractica01 {
         conexion.execute(transaction);
         
         pojo.setClave("01"); 
-        pojo.setNombre("Roberto Modificado");
+        pojo.setNombre("Ivan M");
         pojo.setDireccion("Nueva Dirección");
-        pojo.setTelefono("123456");
+        pojo.setTelefono("09764");
 
         TransaccionDB<EmpleadoPojo> transactionUpdate = new TransaccionDB<EmpleadoPojo>(pojo) {
             @Override

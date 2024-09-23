@@ -14,7 +14,7 @@ public class MensajeConcreto {
     public MensajeConcreto(){
         this.name = "Nombre";
         Logger.getLogger(MensajeConcreto.class.getName()).
-                log(Level.INFO,"Se ejecuta constructor");
+                log(Level.INFO,"constructor en ejecucion");
     }
     
     
